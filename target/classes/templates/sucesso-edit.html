@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title> Success editing </title>
+	<link rel="stylesheet" th:href=@{css/styling.css}>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/success-icon.png}>
+</head>
+
+<body>
+	<section class="success">
+        <img th:src=@{img/success-icon.png} class="image-success" alt="Success"><br>
+        
+        <h1> Your editing was successfully saved!! </h1> <br>
+		
+		<p>
+			Do you want to check it out? Click on the button below. <br>
+		</p> <br>
+		
+		<br>
+        <div class="btn">
+            <a th:href="@{/edit}" class="btn-check"> Back </a>
+        </div>
+    </section>
+</body>
+</html>

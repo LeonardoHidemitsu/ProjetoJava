@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    list-style: none;
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+header{
+    display: flex;
+    flex: 0 0 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: sticky;
+    z-index: 0;
+}
+
+#logo {
+    display: block;
+    padding: 8px 10px;
+    width: 150px;
+    border: none;
+    max-width: 200px;
+}
+
+.menu {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 15px 15px 10px 10px;
+}
+
+.menu li {
+    background-color: #d2691e;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.menu a{
+    display: flex;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu a:hover {
+    padding: 15px 20px 15px 20px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    color: #000;
+    background-color: #d2691e;
+}
+
+p {
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: #d2691e;
+    text-align: center;
+}
+
+/* error */
+.error {
+	text-align: center;
+    margin: 0 auto;
+    margin: 50px 0;
+}
+
+.success {
+	text-align: center;
+    margin: 0 auto;
+    margin: 50px 0;
+}
+
+.image-error, .image-success {
+	width: 25%;
+}
+
+.btn {
+	margin: auto;
+}
+
+.btn-error, .btn-success {
+	border: 1px solid #000;
+    color: #ff8000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* awaited 22,23 */
+.table {
+	align-items: center;
+	border-radius: 10px;
+}
+
+table, th, td {
+	border: 1px double navy;
+	border-collapse: collapse;
+	color: #1d2851;
+	margin: auto;
+}
+
+th, td {
+	padding: 15px;
+}
+
+th {
+	background-color: #d3d3d3;
+	color: #d2691e;
+	font-style: italic;
+}
+
+/* form */
+.campo{
+    padding: 20px 0 20px 40px;
+    background-color: #dcdcdc; 
+    border-radius: 7px;
+    line-height: 24px;
+    margin: 20px;
+    border: 1px double #d2691e;
+    width: 70%;
+}
+
+form .campo>legend{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d2691e;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+form {
+    padding: 20px 50px;
+    width: 93%;
+    margin: 30px 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"], textarea{
+    width: 50%;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    width: 70px;
+    border: none;
+    color: #000;
+    background-color: #d2691e;
+}
+
+input[type="submit"]:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f88a01;
+}
+
+/*suggest*/
+.voltar {
+	border-radius: 5px;
+    width: 70px;
+    border: none;
+    color: #fff;
+    background-color: #d2691e;
+}

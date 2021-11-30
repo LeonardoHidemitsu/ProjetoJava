@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title> Esperados de 2023 </title>
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	
+	<link rel="shotcut icon" type="image/x-icon" th:href="@{img/tech-movies.png}">
+</head>
+
+<body>
+	<header>
+	<img th:src="@{img/tech-movies.png}" alt="Logo TechMovies" title="TechMovies" id="logo">
+		<nav>
+			<ul>
+				<li> <a th:href="@{/}"> Home </a> </li>
+        		<li> <a th:href="@{/esperados22}"> Awaited of 2022 </a> </li>
+       			<li> <a th:href="@{/esperados23}"> Awaited of 2023 </a> </li>
+   				<li> <a th:href="@{/sugerirfilme}"> Suggest movie </a> </li>
+   				<li> <a th:href="@{/filmesugerido}"> Movies suggested </a> </li>
+			</ul>
+		</nav>
+	</header><br>
+	
+	<h2> The most awaited movies to 2023 </h2><br>
+	
+	<p>
+		Many surprises are coming for 2023 too, huh - since musical remakes and live-action to new adventures and horror.
+	</p><br>
+	
+	<br>
+	<table class="table">
+		<caption> Movies to 2023 </caption>
+		<tr>
+			<th> Title </th>
+			<th> Genre </th>
+			<th> Director </th>
+		</tr>
+  		<tr>
+  			<td> Wonka </td>
+  			<td> Adventure, Fantasy, Family, Musical Comedy </td>
+  			<td> Paul King </td>
+  		</tr>
+  		<tr>
+  			<td> The Little Mermaid </td>
+  			<td> Adventure, Drama, Family, Fantasy </td>
+  			<td> Rob Marshall </td>
+  		</tr>
+  		<tr>
+  			<td> Dune 2 </td>
+  			<td> Drama, Science Fiction </td>
+  			<td> Denis Villeneuve </td>
+  		</tr>
+  		<tr>
+  			<td> Guardiões da Galáxia Vol. 3 </td>
+  			<td> Action, Adventure, Science Fiction </td>
+  			<td> James Gunn </td>
+  		</tr>
+  		<tr>
+  			<td> Shazam 2: Fury of The Gods </td>
+  			<td> Adventure, Fantasy </td>
+  			<td> David F. Sandberg </td>
+  		</tr>
+  		<tr>
+  			<td> Fast and Furious 10 </td>
+  			<td> Adventure, Action </td>
+  			<td> Justin Lin </td>
+  		</tr>
+  		<tr>
+  			<td> Mission: Impossible 8 </td>
+  			<td> Action, Suspense </td>
+  			<td> Christopher McQuarrie </td>
+  		</tr>
+  	</table>
+  	<br>
+</body>
+</html>

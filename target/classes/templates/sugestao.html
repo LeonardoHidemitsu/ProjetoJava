@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title> Suggest movie </title>
+	<link rel="stylesheet" th:href=@{css/styling.css}>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/tech-movies.png}>
+</head>
+
+<body>
+	<header>
+	<img th:src=@{img/tech-movies.png} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+    		<li> <a th:href="@{/}"> Home </a> </li>
+        	<li> <a th:href="@{/esperados22}"> Awaited of 2022 </a> </li>
+       		<li> <a th:href="@{/esperados23}"> Awaited of 2023 </a> </li>
+   			<li> <a th:href="@{/sugerirfilme}"> Suggest movie </a> </li>
+   			<li> <a th:href="@{/filmesugerido}"> Movies suggested </a> </li>
+       </ul>
+   </nav>
+</header><br>
+
+<div class="suggest">
+	<h1> Suggest movie </h1>
+	<p> Did you watch a nice movie and want to indicate to us? Leave your suggestion below. </p>
+</div>
+
+    <form action="#" th:action="@{/inserirSugestao}" method=post th:object="${sugestao}">
+            <fieldset class="campo">
+                <legend> Suggestion </legend>
+
+                	Title: <br>
+                	<input type="text" id="nome" th:field="*{nome}" placeholder=" Title of movie">
+                	<br>
+					
+					Synopsis: <br>
+					<textarea id="sinopse" th:field="*{sinopse}" placeholder=" Write a brief synopsis"
+					rows="5" cols="20"></textarea>
+					<br>
+					
+					<br>
+                	<input th:onclick="@{/inserirSugestao}" type="submit" Value="Send"> 
+                	<button th:onclick="@{/}" class="voltar"> Back</button>
+            </fieldset>
+    </form>
+    <br>
+     
+    <br>
+</body>
+</html>

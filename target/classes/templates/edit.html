@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title> Suggested Movies </title>
+	<link rel="stylesheet" th:href=@{css/styling.css}>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/tech-movies.png}>
+</head>
+
+<body>
+	<header>
+	<img th:src=@{img/tech-movies.png} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+    		<li> <a th:href="@{/}"> Home </a> </li>
+        	<li> <a th:href="@{/esperados22}"> Awaited of 2022 </a> </li>
+       		<li> <a th:href="@{/esperados23}"> Awaited of 2023 </a> </li>
+   			<li> <a th:href="@{/sugerirfilme}"> Suggest movie </a> </li>
+   			<li> <a th:href="@{/filmesugerido}"> Movies suggested </a> </li>
+       </ul>
+   </nav>
+</header><br>
+
+	<h1> Edition </h1>
+	<br>
+
+	<div>
+		<table>
+			<tr>
+				<th> Title </th>
+				<th> Synopsis </th>
+			</tr>
+			<tr th:each="edit : ${listarSugestao}">
+				<td th:text="edit : ${edit.nome}"> </td>
+				<td th:text="edit : ${edit.sinopse}"> </td>
+			</tr>
+		</table><br>
+		
+		<button th:onclick="@{/updsugestao}"> Save changes </button>
+		<a th:onclick="@{/}" class="voltar"> Back </a>
+	</div>
+	<br>
+</body>
+</html>

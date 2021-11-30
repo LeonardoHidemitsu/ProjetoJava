@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href=@{css/styling.css}>
+	<title> Erro! </title>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/error-icon.png}>
+</head>
+
+<body>
+	<section class="error">
+        <img th:src=@{img/error-icon.png} class="image-error" alt="Error">
+        <br>
+        <h1> Uh-oh! It seems that something went wrong. </h1>
+
+        <div class="btn">
+            <a th:href="@{/}" class="btn-error"> Back </a>
+        </div>
+    </section>
+</body>

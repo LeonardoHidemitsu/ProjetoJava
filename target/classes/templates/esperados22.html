@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title> Esperados de 2022 </title>
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	
+	<link rel="shotcut icon" type="image/x-icon" th:href="@{img/tech-movies.png}">
+</head>
+
+<body>
+	<header>
+	<img th:src="@{img/tech-movies.png}" alt="Logo TechMovies" title="TechMovies" id="logo">
+		<nav>
+			<ul>
+				<li> <a th:href="@{/}"> Home </a> </li>
+        		<li> <a th:href="@{/esperados22}"> Awaited of 2022 </a> </li>
+       			<li> <a th:href="@{/esperados23}"> Awaited of 2023 </a> </li>
+   				<li> <a th:href="@{/sugerirfilme}"> Suggest movie </a> </li>
+   				<li> <a th:href="@{/filmesugerido}"> Movies suggested </a> </li>
+			</ul>
+		</nav>
+	</header><br>
+	
+	<h2> The most awaited movies to 2022 </h2><br>
+	
+	<p> 
+		If you're a Marvel fan, prepare yourself because there are incredible movies to come in the next years.
+    </p><br>
+      
+      <br>
+      <table class="table">
+      		<caption> Movies to 2022 </caption>
+      		<tr>
+        		<th> Title </th>
+        		<th> Genre </th>
+        		<th> Director </th>
+    		</tr>
+      		<tr>
+      			<td> Scream </td>
+      			<td> Horror, Suspense </td>
+      			<td> Matt Bettinelli-Olphin,Tyler Gillet</td>
+  			</tr>
+  			<tr>
+  				<td> Halloween Ends </td>
+  				<td> Horror </td>
+  				<td> David Gordon Green </td>
+  			</tr>
+  			<tr>
+  				<td> Uncharted </td>
+  				<td> Adventure, Action </td>
+  				<td> Ruben Fleischer </td>
+			</tr>
+			<tr>
+  				<td> Doctor Strange in the Multiverse of Madness </td>
+  				<td> Action, Adventure, Fantasy</td>
+  				<td> Sam Raimi </td>
+  			</tr>
+  			<tr>
+  				<td> Black Adam </td>
+  				<td>Action, Fantasy </td>
+  				<td> Jaume Collet-Serra </td>
+  			<tr>
+  				<td> Spider-Man: Into the Spider-Verse Sequel </td>
+  				<td> Animation, Action, Fantasy </td>
+  				<td> Joaquim dos Santos, Kemp Powers </td>
+  			</tr>
+  			<tr>
+  				<td> Black Panther: Wakanda Forever</td>
+  				<td> Action, Adventure, Fantasy </td>
+  				<td> Ryan Coogler </td>
+  			</tr>
+  			<tr>
+  				<td> Orphan: First Kill </td>
+  				<td> Horror </td>
+  				<td> Willian Brent Bell </td>
+  			</tr>
+      		</tbody>
+      </table>
+      <br>
+</body>
+</html>

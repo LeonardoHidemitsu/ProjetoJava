@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+	<meta charset="UTF-8">
+	<title> Home </title>
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	
+	<link th:href=@{img/tech-movies.png} rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+<header>
+	<img th:src=@{img/tech-movies.png} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+   			<li> <a th:href="@{/}"> Home </a> </li>
+        	<li> <a th:href="@{/esperados22}"> Awaited of 2022 </a> </li>
+       		<li> <a th:href="@{/esperados23}"> Awaited of 2023 </a> </li>
+   			<li> <a th:href="@{/sugerirfilme}"> Suggest movie </a> </li>
+   			<li> <a th:href="@{/filmesugerido}"> Movies suggested </a> </li>
+       </ul>
+   </nav>
+</header><br>
+
+	<h1> Welcome to <em>TechMovies </em> </h1>
+	
+	<p> 
+		The TechMovies' objective is keeping everyone connected in what happens in the world of <em>seventh art</em>. <br> We aim to 
+	bring the gigantic sections of what will come to movies in the future.
+	</p>
+	<br>
+	
+	<p>
+		If you want to suggest us a movie, click <a th:href="@{/sugerirfilme}"> here </a> and tell a little bit about it.
+	</p>
+	<br>
+</body>
+</html>
